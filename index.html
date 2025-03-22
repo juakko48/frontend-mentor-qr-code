@@ -5,22 +5,61 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
 
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap" rel="stylesheet">
   
   <title>Frontend Mentor | QR code component</title>
 
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
   <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
+    * {
+      margin: 0;
+      padding: 0;
+    }
+    body {
+      background: hsl(212, 45%, 89%);
+      font-family: "Outfit", sans-serif;
+    }
+
+    .card {
+      background: hsl(0, 0%, 100%);
+      width: 300px;
+      margin: auto;
+      padding-left: 16px;
+      padding-right: 16px;
+      padding-top: 16px;
+      padding-bottom: 40px;
+      border-radius: 16px;
+      display: flex;
+      flex-direction: column;
+      box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.2);
+    }
+
+    #main-text {
+      text-align: center;
+      font-weight: bold;
+      font-size: 24px;
+      margin-top: 1.5rem;
+      margin-bottom: 1.5rem;
+      color: hsl(218, 44%, 22%);
+    }
+
+    #description {
+      color: hsl(216, 15%, 48%);
+      text-align: center;
+      padding-left: 16px;
+      padding-right: 16px;
+      line-height: 1.5;
+    }
   </style>
 </head>
 <body>
-
-
-  
-  <div class="attribution">
-    Reto de <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Codificado por <a href="#">juakko48</a>.
+  <div style="height: 100vh; box-sizing: border-box; display: flex; flex-direction: column; justify-content: center;">
+    <div class="card">
+      <img src="./images/image-qr-code.png" height="300px" style="border-radius: 16px;">
+      <p id="main-text">Improve your front-end skills by building projects</p>
+      <p id="description">Scan the QR code to visit Frontend Mentor and take your coding skills to the next level</p>
+    </div>
   </div>
 </body>
 </html>
